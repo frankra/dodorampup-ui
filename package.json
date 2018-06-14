@@ -1,0 +1,41 @@
+{
+  "name": "dodorampup",
+  "namespace": "com.sap.CloudSCAME.dodorampup",
+  "less_files": {
+      "webapp/styles/main.css": "webapp/styles/main.less"
+  },
+  "version": "2.0.8",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-middleware-proxy": "^1.0.7",
+    "grunt-connect-rewrite": "^0.2.1",
+    "grunt-replace": "^1.0.1",
+    "grunt-karma": "^2.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-eslint": "^20.1.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-openui5": "^0.12.0",
+    "karma": "^1.5.0",
+    "karma-coverage": "^1.1.1",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-openui5": "^0.2.3",
+    "karma-phantomjs-shim": "^1.5.0",
+    "karma-qunit": "^1.2.1",
+    "qunitjs": "^2.3.0",
+    "include-all": "^4.0.3",
+    "path": "^0.12.7"
+  },
+  "optionalDependencies": {
+    "karma-phantomjs-launcher": "^1.0.4"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "test": "grunt test",
+    "opa": "grunt test-ci"
+  }
+}

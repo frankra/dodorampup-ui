@@ -1,0 +1,5 @@
+<mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.App" 
+  xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+  xmlns="sap.m">
+  <SplitApp id="idAppControl" mode="{AppView>/SplitAppMode}" masterButton="onMasterButton" busy="{AppView>/Busy}" busyIndicatorDelay="0"/>
+</mvc:View>
