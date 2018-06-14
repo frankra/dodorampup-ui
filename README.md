@@ -1,6 +1,4 @@
-# liv-alineacion-total-frontend
-
-
+# Dodo Rampup
 
 ## Install Dependencies
 
