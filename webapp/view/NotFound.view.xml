@@ -1,4 +1,4 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
   xmlns="sap.m">
-  <MessagePage title="{i18n>NotFoundPage.Title}" text="{i18n>NotFoundPage.Text}" description="{i18n>NotFoundPage.Description}"/>
+  <MessagePage title="Not Found" text="Resource not found :(" description="Please try a different route"/>
 </mvc:View>
