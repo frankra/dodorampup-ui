@@ -3,7 +3,14 @@
     xmlns="sap.m">
     <Page title="Title" id="idMasterPage" showHeader="true">
         <content>
+        
 
         </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="New" press="onNewTaskClicked" icon="sap-icon://create"/>
+            </Toolbar>
+        </footer>
     </Page>
 </mvc:View>

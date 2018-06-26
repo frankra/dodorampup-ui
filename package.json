@@ -2,7 +2,7 @@
   "name": "dodorampup",
   "namespace": "com.sap.CloudSCAME.dodorampup",
   "less_files": {
-      "webapp/styles/main.css": "webapp/styles/main.less"
+    "webapp/styles/main.css": "webapp/styles/main.less"
   },
   "version": "2.0.8",
   "devDependencies": {
