@@ -1,7 +1,7 @@
 <mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.master.Master" 
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page title="Title" id="idMasterPage" showHeader="true">
+    <Page title="Customers" id="idMasterPage" showHeader="true">
         <content>
         
 

@@ -1,5 +1,6 @@
 <mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.detail.Detail" 
-    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:mvc="sap.ui.core.mvc"
+
     xmlns="sap.m">
     <Page title="Detail" id="idDetailPage" busy="{View>/Busy}" busyIndicatorDelay="0" floatingFooter="true">
         <content>
@@ -39,9 +40,10 @@
         <footer>
             <Toolbar>
                 <ToolbarSpacer/>
-                <Button text="Edit" press="onNewTaskClicked" icon="sap-icon://edit"/>
-                <Button text="Save" press="onNewTaskClicked" icon="sap-icon://save"/>
-                <Button text="Delete" press="onNewTaskClicked" icon="sap-icon://delete"/>
+                <Button text="Edit" press="handleEditPress" icon="sap-icon://edit" visible="true"/>
+                <Button text="Save" press="handleSavePress" icon="sap-icon://save" visible="false"/>
+                <Button text="Cancel" press="handleCancelPress" icon="sap-icon://cancel" visible="false"/>
+                <Button text="Delete" press="handleDeletePress" icon="sap-icon://delete" visible="true"/>
             </Toolbar>
         </footer>
     </Page>
