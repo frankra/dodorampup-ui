@@ -1,0 +1,95 @@
+{
+    "_version": "1.3.0",
+    "sap.app": {
+        "_version": "1.3.0",
+        "id": "com.sap.CloudSCAME.dodorampup",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "ach": "XX"
+    },
+    "sap.ui": {
+        "_version": "1.3.0",
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.2.0",
+        "rootView": {
+            "viewName": "com.sap.CloudSCAME.dodorampup.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.sap.CloudSCAME.dodorampup.i18n.i18n"
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": false,
+            "cozy": true
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "styles/main.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "com.sap.CloudSCAME.dodorampup.view",
+                "controlId": "idAppControl",
+                "transition": "slide",
+                "bypassed": {
+                    "target": "notFound"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "default",
+                    "target": [
+                        "app.master",
+                        "app.detail"
+                    ]
+                }
+            ],
+            "targets": {
+                "notFound": {
+                    "viewName": "NotFound",
+                    "controlAggregation": "detailPages",
+                    "transition": "show"
+                },
+                "empty": {
+                    "viewName": "Empty",
+                    "controlAggregation": "detailPages"
+                },
+                "app.master": {
+                    "viewName": "master.Master",
+                    "controlAggregation": "masterPages"
+                },
+                "app.detail": {
+                    "viewName": "detail.Detail",
+                    "controlAggregation": "detailPages"
+                }
+            }
+        }
+    }
+}

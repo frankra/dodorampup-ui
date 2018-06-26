@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.detail.Detail" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <Page title="Detai" id="idDetailPage" busy="{View>/Busy}" busyIndicatorDelay="0" floatingFooter="true">
+        <content>
+
+        </content>
+    </Page>
+</mvc:View>
