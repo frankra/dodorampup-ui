@@ -1,9 +1,9 @@
 <mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.master.Master" 
-    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:mvc="sap.ui.core.mvc" 
     xmlns="sap.m">
-    <Page title="Customers" id="idMasterPage" showHeader="true">
+    <Page title="Customers" id="idMasterPage" showHeader="true" floatingFooter="true">
         <content>
-        
+
 
         </content>
         <footer>
@@ -12,5 +12,47 @@
                 <Button text="New" press="onNewTaskClicked" icon="sap-icon://create"/>
             </Toolbar>
         </footer>
+        <dependents>
+            <Dialog id="creationDialog">
+                <content>
+                    <Label text="Name" labelFor="nameInput"/>
+                    <Input id="nameInput" required="true" value="{UserModel>/name}"/>
+
+                    <Label text="CPF" labelFor="cpfInput"/>
+                    <Input id="cpfInput" required="true" type="Number" value="{UserModel>/cpf}"/>
+
+                    <Label text="Phone Number" labelFor="phoneNumberInput"/>
+                    <Input id="phoneNumberInput" type="Number" value="{UserModel>/phone}"/>
+
+                    <Label text="Birth Date" labelFor="birthDateInput"/>
+                    <Input id="birthDateInput" type="Date" value="{UserModel>/birthdate}"/>
+
+                    <Label text="E-mail" labelFor="emailInput"/>
+                    <Input id="emailInput" required="true" type="Email" value="{UserModel>/email}"/>
+
+                    <Label text="Adress" labelFor="adressInput"/>
+                    <Input id="adressInput" value="{UserModel>/address}"/>
+
+                    <Label text="Number" labelFor="addressNumberInput"/>
+                    <Input id="addressNumberInput" type="Number" value="{UserModel>/housenumber}"/>
+
+                    <Label text="City" labelFor="cityInput"/>
+                    <Input id="cityInput" value="{UserModel>/city}"/>
+
+                    <Label text="State" labelFor="stateInput"/>
+                    <Input id="stateInput" value="{UserModel>/state}"/>
+
+                    <Label text="Country" labelFor="countryInput"/>
+                    <Input id="countryInput" value="{UserModel>/country}"/>
+
+                    <Label text="CEP" labelFor="cepInput"/>
+                    <Input id="cepInput" type="Number" value="{UserModel>/cep}"/>
+                </content>
+                <buttons>
+                    <Button text="Save" press="handleSavePress" icon="sap-icon://save"/>
+                    <Button text="Cancel" press="handleCancelPress" icon="sap-icon://cancel"/>
+                </buttons>
+            </Dialog>
+        </dependents>
     </Page>
 </mvc:View>
