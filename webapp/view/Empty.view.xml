@@ -1,5 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
   xmlns="sap.m">
   <Page id="idEmptyPage">
+    <Label text="Select a user to continue"/>
   </Page>
 </mvc:View>

@@ -1,41 +1,11 @@
 <mvc:View controllerName="com.sap.CloudSCAME.dodorampup.view.detail.Detail" 
-    xmlns:mvc="sap.ui.core.mvc"
-
-    xmlns="sap.m">
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m"
+    busyIndicatorDelay="{AppState>/busyIndicatorDelay}">
     <Page title="Detail" id="idDetailPage" busy="{View>/Busy}" busyIndicatorDelay="0" floatingFooter="true">
         <content>
-                <Label text="Name" labelFor="nameInput"/>
-                <Input id="nameInput" required="true"/>
-
-                <Label text="CPF" labelFor="cpfInput"/>
-                <Input id="cpfInput" required="true" type="Number" maxLength="11"/>
-                
-                <Label text="Phone Number" labelFor="phoneNumberInput"/>
-                <Input id="phoneNumberInput" type="Number"/>
-                
-                <Label text="Birth Date" labelFor="birthDateInput"/>
-                <Input id="birthDateInput" type="Date"/>
-                
-                <Label text="E-mail" labelFor="emailInput"/>
-                <Input id="emailInput" required="true" type="Email"/>
-                
-                <Label text="Adress" labelFor="adressInput"/>
-                <Input id="adressInput"/>
-                
-                <Label text="Number" labelFor="addressNumberInput"/>
-                <Input id="addressNumberInput" type="Number"/>
-                
-                <Label text="City" labelFor="cityInput"/>
-                <Input id="cityInput"/>
-                
-                <Label text="State" labelFor="stateInput"/>
-                <Input id="stateInput"/>
-                
-                <Label text="Country" labelFor="countryInput"/>
-                <Input id="countryInput"/>
-                
-                <Label text="CEP" labelFor="cepInput"/>
-                <Input id="cepInput" type="Number"/>
+            <core:Fragment fragmentName="com.sap.CloudSCAME.dodorampup.view.fragment.UserDataForm" type="XML"/>
         </content>
         <footer>
             <Toolbar>

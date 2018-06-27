@@ -67,6 +67,14 @@
                     "name": "default",
                     "target": [
                         "app.master",
+                        "empty"
+                    ]
+                },
+                {
+                    "pattern": "view/{id}",
+                    "name": "viewDetail",
+                    "target": [
+                        "app.master",
                         "app.detail"
                     ]
                 }
